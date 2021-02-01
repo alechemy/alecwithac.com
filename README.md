@@ -9,3 +9,4 @@ My lightweight, no-JS portfolio site.
 - [Nova by Panic](https://nova.app) - Color palette inspiration.
 - [favicon-emoji](https://github.com/albinekb/favicon-emoji) - Why make a custom favicon when I can use emoji.
 - [RealFaviconGenerator](https://realfavicongenerator.net) - Real devs use RealFaviconGenerator.
+- [PhotoMosh](https://photomosh.com) - Glitch yo'self.
