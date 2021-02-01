@@ -1,0 +1,13 @@
+{
+  "name": "alecwithac.com",
+  "version": "1.0.0",
+  "description": "",
+  "author": "alechemy",
+  "scripts": {
+    "build": "cp ./node_modules/mvp.css/mvp.css ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mvp.css": "^1.6.3"
+  }
+}

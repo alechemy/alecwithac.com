@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('./mvp.css');
+
+:root {
+  /* MVP.css var overrides */
+  --color: #0c8cfe; /* --blue */
+  --color-accent: #0c8cfe; /* --blue */
+  --color-bg: #060b1b; /* --base00 */
+  --color-bg-secondary: rgb(55, 57, 61); /* --base03 */
+  --color-text: rgb(183, 189, 203); /* --base06 */
+  --color-text-secondary: rgb(110, 114, 123); /* --base04 */
+
+  /* Custom vars */
+  --color-fg: rgb(152, 152, 157); /* --base05 */
+  --color-fg-light: rgb(248, 248, 240); /* --base07 */
+  --color-fg-dark: rgb(110, 114, 123); /* --base04 */
+  --color-fg-dark-alt: rgb(55, 57, 61); /* --base03 */
+  --color-fg-vibrant: #e532ad; /* Keywords */
+}
+
+@supports (color: color(display-p3 1 1 1 / 1)) {
+  :root {
+    /* MVP.css var overrides */
+    --color: color(display-p3 0.05 0.55 1 / 1); /* --blue */
+    --color-accent: color(display-p3 0.05 0.55 1 / 1); /* --blue */
+    --color-bg: color(display-p3 0.02 0.04 0.11 / 1); /* --base00 */
+
+    /* Custom vars */
+    --color-fg-vibrant: color(display-p3 0.9 0.2 0.68 / 1); /* Keywords */
+  }
+}
+
+/* Fonts */
+@font-face {
+  font-family: YoungSerif;
+  src: url('static/YoungSerif-Regular.woff2') format('woff2'),
+    url('static/YoungSerif-Regular.woff') format('woff');
+}
+
+/* Custom styles */
+header h1 {
+  margin-top: 7rem;
+}
+
+nav {
+  margin-bottom: 0;
+}
+
+h1 {
+  color: var(--color-fg-light);
+  font-family: 'YoungSerif', ui-serif, serif;
+}
+
+h2 {
+  color: var(--color-fg-vibrant);
+}
+
+nav ul li a {
+  color: var(--color-fg);
+}
+
+section div,
+section article {
+  margin: auto 1rem;
+  width: 400px;
+}
+
+section div video {
+  width: 100%;
+}
