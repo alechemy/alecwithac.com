@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "author": "alechemy",
+  "repository": "github:alechemy/alecwithac.com",
   "scripts": {
     "build": "cp ./node_modules/mvp.css/mvp.css ."
   },
