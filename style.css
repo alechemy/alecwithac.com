@@ -9,6 +9,8 @@
   --color-bg-secondary: rgb(55, 57, 61); /* --base03 */
   --color-text: rgb(183, 189, 203); /* --base06 */
   --color-text-secondary: rgb(110, 114, 123); /* --base04 */
+  --color-secondary: #eb6a2c; /* --base12 */
+  --color-secondary-accent: #eb6a2c; /* --base12 */
 
   /* Custom vars */
   --color-fg: rgb(152, 152, 157); /* --base05 */
@@ -24,6 +26,10 @@
     --color: color(display-p3 0.05 0.55 1 / 1); /* --blue */
     --color-accent: color(display-p3 0.05 0.55 1 / 1); /* --blue */
     --color-bg: color(display-p3 0.02 0.04 0.11 / 1); /* --base00 */
+    --color-secondary: color(display-p3 0.92 0.42 0.17 / 1); /* --base12 */
+    --color-secondary-accent: color(
+      display-p3 0.92 0.42 0.17 / 1
+    ); /* --base12 */
 
     /* Custom vars */
     --color-fg-vibrant: color(display-p3 0.9 0.2 0.68 / 1); /* Keywords */
