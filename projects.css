@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import url('./mvp.css');
+@import url('./style.css');
+
+main {
+  justify-content: center;
+}

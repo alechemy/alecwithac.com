@@ -3,6 +3,7 @@
 
 :root {
   /* MVP.css var overrides */
+  --width-content: 640px;
   --color: #0c8cfe; /* --blue */
   --color-accent: #0c8cfe; /* --blue */
   --color-bg: #060b1b; /* --base00 */
@@ -44,12 +45,81 @@
 }
 
 /* Custom styles */
-header h1 {
-  margin-top: 7rem;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: 100%; /* note: it's not min! */
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+  /* proper mobile scrollbar locations */
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0;
+}
+
+main,
+footer,
+nav {
+  max-width: var(--width-content);
+}
+
+main,
+header,
+footer {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  padding: 0;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  max-width: none;
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 0px;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(24, 24, 27, 0.6);
 }
 
 nav {
   margin-bottom: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: var(--color-fg);
+}
+
+main {
+  padding: 8rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  border-top: 1px solid var(--color-bg-secondary);
 }
 
 h1 {
@@ -59,20 +129,6 @@ h1 {
 
 h2 {
   color: var(--color-fg-vibrant);
-}
-
-nav ul li a {
-  color: var(--color-fg);
-}
-
-section div,
-section article {
-  margin: auto 1rem;
-  width: 400px;
-}
-
-section div video {
-  width: 100%;
 }
 
 icon {

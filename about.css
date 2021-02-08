@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import url('./mvp.css');
+@import url('./style.css');
+
+section div,
+section article {
+  margin: auto 1rem;
+  flex: 0 1 400px;
+}
+
+section div video {
+  width: 100%;
+}
