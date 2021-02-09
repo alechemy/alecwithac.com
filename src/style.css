@@ -42,6 +42,7 @@
   font-family: YoungSerif;
   src: url('static/YoungSerif-Regular.woff2') format('woff2'),
     url('static/YoungSerif-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 /* Custom styles */
