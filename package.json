@@ -1,11 +1,19 @@
 {
   "name": "alecwithac.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "My lightweight, no-JS portfolio site.",
   "author": "alechemy",
   "repository": "github:alechemy/alecwithac.com",
   "scripts": {
-    "build": "cp ./node_modules/mvp.css/mvp.css ."
+    "build": "npm run clean && mkdir -p dist/static && npm run copy",
+    "clean": "rm -rf dist",
+    "copy": "npm run copy:static && npm run copy:html && npm run copy:css && npm run copy:vendor",
+    "copy:css": "find src -name '*.css' -type f -exec cp {} dist \\;",
+    "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
+    "copy:static": "cp -r src/static/* dist/static",
+    "copy:vendor": "cp ./node_modules/mvp.css/mvp.css dist",
+    "mkdirs": "mkdir dist",
+    "postinstall": "cp ./node_modules/mvp.css/mvp.css src"
   },
   "license": "MIT",
   "dependencies": {
