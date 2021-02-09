@@ -148,3 +148,7 @@ icon img {
 a icon {
   margin-right: 4px;
 }
+
+small {
+  color: var(--color-text);
+}
