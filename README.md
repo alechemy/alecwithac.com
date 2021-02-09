@@ -11,3 +11,4 @@ My lightweight, no-JS portfolio site.
 - [RealFaviconGenerator](https://realfavicongenerator.net) - Real devs use RealFaviconGenerator.
 - [PhotoMosh](https://photomosh.com) - Glitch yo'self.
 - [Eva Icons](https://akveo.github.io/eva-icons/#/) - Font Awesome detox.
+- [Critical](https://github.com/addyosmani/critical) - Speed is critical.
