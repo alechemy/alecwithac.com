@@ -14,13 +14,15 @@
     "copy:vendor": "cp ./node_modules/mvp.css/mvp.css dist",
     "critical": "find dist -type f -name '*.html' -exec sh -c '$(npm bin)/critical {} --base dist --inline > dist/tmp.html && mv dist/tmp.html {}' \\;",
     "mkdirs": "mkdir dist",
-    "postinstall": "cp ./node_modules/mvp.css/mvp.css src"
+    "postinstall": "cp ./node_modules/mvp.css/mvp.css src",
+    "serve": "browser-sync start -s --files 'src/**/*.(js|css|html)' --ss 'src' --port 3000 --reload-debounce 500 --no-open --no-notify"
   },
   "license": "MIT",
   "dependencies": {
     "mvp.css": "^1.6.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "critical": "^2.0.6"
   }
 }
