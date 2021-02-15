@@ -1,6 +1,7 @@
-node_modules/
-dist/
-mvp.css
+.netlify/
+.nova/
 
-# Local Netlify folder
-.netlify
+dist/
+node_modules/
+
+mvp.css
