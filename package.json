@@ -7,20 +7,16 @@
   "scripts": {
     "build": "npm run clean && mkdir -p dist/static && npm run copy && npm run critical",
     "clean": "rm -rf dist",
-    "copy": "npm run copy:static && npm run copy:html && npm run copy:css && npm run copy:vendor",
+    "copy": "npm run copy:static && npm run copy:html && npm run copy:css",
     "copy:css": "find src -name '*.css' -type f -exec cp {} dist \\;",
     "copy:html": "find src -name '*.html' -type f -exec cp {} dist \\;",
     "copy:static": "cp -r src/static/* dist/static",
-    "copy:vendor": "cp ./node_modules/mvp.css/mvp.css dist",
     "critical": "find dist -type f -name '*.html' -exec sh -c '$(npm bin)/critical {} --base dist --inline > dist/tmp.html && mv dist/tmp.html {}' \\;",
     "mkdirs": "mkdir dist",
-    "postinstall": "cp ./node_modules/mvp.css/mvp.css src",
     "serve": "browser-sync start -s --files 'src/**/*.(js|css|html)' --ss 'src' --port 3000 --reload-debounce 500 --no-open --no-notify"
   },
   "license": "MIT",
-  "dependencies": {
-    "mvp.css": "^1.6.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "critical": "^2.0.6"
