@@ -21,15 +21,15 @@ section > * {
   width: fill-available;
 }
 
-section aside h3 {
-  margin: 0;
+section aside span:first-of-type {
+  font-size: 1.1em;
 }
 
 section aside p {
   color: var(--color-text-secondary);
 }
 
-section aside span a:first-of-type {
+section aside span:last-of-type a:first-of-type {
   color: var(--color-text);
   margin-right: 0.5rem;
   font-weight: normal;
