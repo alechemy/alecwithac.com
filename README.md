@@ -12,3 +12,4 @@ My lightweight, no-JS portfolio site.
 - [PhotoMosh](https://photomosh.com) - Glitch yo'self.
 - [Eva Icons](https://akveo.github.io/eva-icons/#/) - Font Awesome detox.
 - [Critical](https://github.com/addyosmani/critical) - Speed is critical.
+- [Netlify](https://www.netlify.com) - I love deploying sites with Netlify.
