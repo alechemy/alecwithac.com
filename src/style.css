@@ -131,6 +131,7 @@ footer {
 }
 
 hr {
+  width: 100%;
   background-color: var(--color-bg-secondary);
   border: none;
   height: 1px;
@@ -334,6 +335,10 @@ pre samp {
 
 small {
   color: var(--color-text-secondary);
+}
+
+small a {
+  margin-left: 0.5rem;
 }
 
 sup {
