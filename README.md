@@ -1,6 +1,6 @@
 # [alecwithac.com](https://alecwithac.com)
 
-My lightweight, no-JS portfolio site.
+My lightweight, low-JS portfolio site.
 
 # Things used
 
