@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/static/Alec-resume.pdf"
+  [headers.values]
+    X-Robots-Tag = "noindex"
